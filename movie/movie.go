@@ -1,6 +1,7 @@
 package movie
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"log"
@@ -20,7 +21,10 @@ type Movie struct {
 const (
 	Header = `# 豆瓣 TOP Movie 250
 
-> use go native package html to achieve this.
+> use goquery to achieve this.
+
+🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.
+
 
 | Title | Rate | Type | Info | Quote |
 | ----- | ---- | ---- | ---- | ----- |
@@ -29,7 +33,7 @@ const (
 )
 
 func GetMovie(start int) []Movie {
-	body := GetMovieBody(start)
+	body := GetMovieBodyFromStart(start)
 
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(body))
 	if err != nil {
@@ -37,22 +41,15 @@ func GetMovie(start int) []Movie {
 	}
 	var doubanMovie []Movie
 	doc.Find("div.info ").Each(func(i int, selection *goquery.Selection) {
-		/*title := func() []string {
-			var ts []string
-			selection.Find("div.hd > a > span.title").Each(func(i int, selection *goquery.Selection) {
-				s := selection.Text()
-				ts = append(ts, s)
-			})
-			return ts
-		}*/
 		rawTitle := selection.Find("div.hd > a > span.title").Text()
 		title := strings.ReplaceAll(rawTitle, " / ", " ")
+
 		var info string
 		info = selection.Find(`div.bd > p[class=""]`).Text()
 		info = strings.ReplaceAll(info, " ", "	")
 		info = strings.ReplaceAll(info, "\n", " ")
 		info = strings.TrimSpace(info)
-
+		// or substr can change to "\t\t\t"
 		index := strings.Index(info, "                             ")
 		info2 := info[:index]
 
@@ -77,7 +74,7 @@ func GetMovie(start int) []Movie {
 
 var ids []int64
 
-func WriteToFile(movie []Movie) error {
+func WriteMdToFile(movie []Movie) error {
 	// change path here
 	file, err := os.OpenFile("README.md", os.O_CREATE|os.O_RDWR|os.O_TRUNC, 0666)
 	//file, err := os.OpenFile("README.md", os.O_RDWR|os.O_TRUNC, 0666)
@@ -102,4 +99,31 @@ func WriteToFile(movie []Movie) error {
 		return err
 	}
 	return nil
+}
+
+func WriteJsonToFile(movie []Movie) {
+	bytes, err := json.MarshalIndent(movie, "\t", " ")
+	if err != nil {
+		log.Fatal(err)
+	}
+	file, err := os.OpenFile("README.md", os.O_CREATE|os.O_RDWR|os.O_TRUNC, 0666)
+	if err != nil {
+		log.Println(err)
+	}
+
+	_, err = file.WriteString(fmt.Sprintf("*Last update Time: %v*\n\n", time.Now().Format("2006-01-02 15:04:05")))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = file.WriteString("🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.\n")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = file.WriteString(fmt.Sprintf("```json\n%v```", string(bytes)))
+	if err != nil {
+		log.Fatal(err)
+	}
+
 }
