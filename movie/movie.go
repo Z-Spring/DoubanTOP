@@ -12,6 +12,7 @@ import (
 
 type Movie struct {
 	Name  string `json:"name,omitempty"`
+	Image string `json:"image,omitempty"`
 	Rate  string `json:"rate,omitempty"`
 	Quote string `json:"quote,omitempty"`
 	Info  string `json:"info,omitempty"`
@@ -26,8 +27,8 @@ const (
 🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.
 
 
-| Title | Rate | Type | Info | Quote |
-| ----- | ---- | ---- | ---- | ----- |
+| Image | Title | Rate | Type | Info | Quote |
+| ----- | ----- | ---- | ---- | ---- | ----- |
 `
 	Footer = "\n*Last update Time: %v*"
 )
@@ -40,7 +41,7 @@ func GetMovie(start int) []Movie {
 		log.Fatal(err)
 	}
 	var doubanMovie []Movie
-	doc.Find("div.info ").Each(func(i int, selection *goquery.Selection) {
+	/*	doc.Find("div.info ").Each(func(i int, selection *goquery.Selection) {
 		rawTitle := selection.Find("div.hd > a > span.title").Text()
 		title := strings.ReplaceAll(rawTitle, " / ", " ")
 
@@ -60,6 +61,38 @@ func GetMovie(start int) []Movie {
 		quote := selection.Find("div.bd > p.quote > span").Text()
 
 		movies := Movie{
+			Name:  title,
+			Info:  info2,
+			Rate:  star,
+			Quote: quote,
+			Type:  movieType2,
+		}
+		doubanMovie = append(doubanMovie, movies)
+
+	})*/
+	doc.Find("div.item ").Each(func(i int, selection *goquery.Selection) {
+		imageLink, _ := selection.Find("div.pic > a > img").Attr("src")
+
+		rawTitle := selection.Find("div.info > div.hd > a > span.title").Text()
+		title := strings.ReplaceAll(rawTitle, " / ", " ")
+
+		var info string
+		info = selection.Find(`div.info > div.bd > p[class=""]`).Text()
+		info = strings.ReplaceAll(info, " ", "	")
+		info = strings.ReplaceAll(info, "\n", " ")
+		info = strings.TrimSpace(info)
+		// or substr can change to "\t\t\t"
+		index := strings.Index(info, "                             ")
+		info2 := info[:index]
+
+		movieType := info[index:]
+		movieType2 := strings.TrimSpace(movieType)
+
+		star := selection.Find("div.info > div.bd > div.star > span.rating_num").Text()
+		quote := selection.Find("div.info > div.bd > p.quote > span").Text()
+
+		movies := Movie{
+			Image: imageLink,
 			Name:  title,
 			Info:  info2,
 			Rate:  star,
@@ -89,7 +122,7 @@ func WriteMdToFile(movie []Movie) error {
 		return err
 	}
 	for _, movie := range movie {
-		_, err := file.WriteString(fmt.Sprintf("| %s | %s | %s | %s | %s |\n", movie.Name, movie.Rate, movie.Type, movie.Info, movie.Quote))
+		_, err := file.WriteString(fmt.Sprintf("| ![](%s) | %s | %s | %s | %s | %s |\n", movie.Image, movie.Name, movie.Rate, movie.Type, movie.Info, movie.Quote))
 		if err != nil {
 			return err
 		}
