@@ -1,4 +1,6 @@
-*Last update Time: 2022-06-28 15:12:02*
+*Last update Time: 2022-06-28 18:32:45*
+
+**If you first use this , please delete req.Header.Add("cookie","....") in fetch.go** 
 
 🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.
 ```json

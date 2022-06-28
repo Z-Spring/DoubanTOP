@@ -152,7 +152,12 @@ func WriteJsonToFile(movie []Movie) {
 		log.Fatal(err)
 	}
 
-	_, err = file.WriteString("🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.\n")
+	_, err = file.WriteString(`**If you first use this , please delete req.Header.Add("cookie","....") in fetch.go** `)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = file.WriteString("\n\n🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.\n")
 	if err != nil {
 		log.Fatal(err)
 	}
