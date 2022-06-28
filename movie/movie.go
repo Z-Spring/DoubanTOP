@@ -11,6 +11,7 @@ import (
 )
 
 type Movie struct {
+	Id    string `json:"id,omitempty"`
 	Name  string `json:"name,omitempty"`
 	Image string `json:"image,omitempty"`
 	Rate  string `json:"rate,omitempty"`
@@ -27,8 +28,8 @@ const (
 🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.
 
 
-| Image | Title | Rate | Type | Info | Quote |
-| ----- | ----- | ---- | ---- | ---- | ----- |
+| Id | Image | Title | Rate | Type | Info | Quote |
+| -- | ----- | ----- | ---- | ---- | ---- | ----- |
 `
 	Footer = "\n*Last update Time: %v*"
 )
@@ -71,6 +72,7 @@ func GetMovie(start int) []Movie {
 
 	})*/
 	doc.Find("div.item ").Each(func(i int, selection *goquery.Selection) {
+		movieId := selection.Find("div.pic > em").Text()
 		imageLink, _ := selection.Find("div.pic > a > img").Attr("src")
 
 		rawTitle := selection.Find("div.info > div.hd > a > span.title").Text()
@@ -92,6 +94,7 @@ func GetMovie(start int) []Movie {
 		quote := selection.Find("div.info > div.bd > p.quote > span").Text()
 
 		movies := Movie{
+			Id:    movieId,
 			Image: imageLink,
 			Name:  title,
 			Info:  info2,
@@ -122,7 +125,7 @@ func WriteMdToFile(movie []Movie) error {
 		return err
 	}
 	for _, movie := range movie {
-		_, err := file.WriteString(fmt.Sprintf("| ![](%s) | %s | %s | %s | %s | %s |\n", movie.Image, movie.Name, movie.Rate, movie.Type, movie.Info, movie.Quote))
+		_, err := file.WriteString(fmt.Sprintf("| %s | ![](%s) | %s | %s | %s | %s | %s |\n", movie.Id, movie.Image, movie.Name, movie.Rate, movie.Type, movie.Info, movie.Quote))
 		if err != nil {
 			return err
 		}
