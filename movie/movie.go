@@ -28,8 +28,8 @@ const (
 🎁 you can also read [Douban-Movie250](https://github.com/Z-Spring/Douban-Movie250) which achieves the same features but native html to parse.
 
 
-| Id | Image | Title | Rate | Type | Info | Quote |
-| -- | ----- | ----- | ---- | ---- | ---- | ----- |
+| Id  | Image | Title | Rate | Type | Info | Quote |
+| --- | ----- | ----- | ---- | ---- | ---- | ----- |
 `
 	Footer = "\n*Last update Time: %v*"
 )
@@ -74,6 +74,9 @@ func GetMovie(start int) []Movie {
 	doc.Find("div.item ").Each(func(i int, selection *goquery.Selection) {
 		movieId := selection.Find("div.pic > em").Text()
 		imageLink, _ := selection.Find("div.pic > a > img").Attr("src")
+		imageLink = strings.ReplaceAll(imageLink, "img9", "img2")
+		imageLink = strings.ReplaceAll(imageLink, "img3", "img2")
+		imageLink = strings.ReplaceAll(imageLink, "img1", "img2")
 
 		rawTitle := selection.Find("div.info > div.hd > a > span.title").Text()
 		title := strings.ReplaceAll(rawTitle, " / ", " ")
