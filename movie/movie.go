@@ -6,12 +6,13 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"log"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 )
 
 type Movie struct {
-	Id    string `json:"id,omitempty"`
+	Id    int    `json:"id,omitempty"`
 	Name  string `json:"name,omitempty"`
 	Image string `json:"image,omitempty"`
 	Rate  string `json:"rate,omitempty"`
@@ -34,45 +35,17 @@ const (
 	Footer = "\n*Last update Time: %v*"
 )
 
-func GetMovie(start int) []Movie {
+func GetMovie(start int) []*Movie {
 	body := GetMovieBodyFromStart(start)
 
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(body))
 	if err != nil {
 		log.Fatal(err)
 	}
-	var doubanMovie []Movie
-	/*	doc.Find("div.info ").Each(func(i int, selection *goquery.Selection) {
-		rawTitle := selection.Find("div.hd > a > span.title").Text()
-		title := strings.ReplaceAll(rawTitle, " / ", " ")
+	var doubanMovie []*Movie
 
-		var info string
-		info = selection.Find(`div.bd > p[class=""]`).Text()
-		info = strings.ReplaceAll(info, " ", "	")
-		info = strings.ReplaceAll(info, "\n", " ")
-		info = strings.TrimSpace(info)
-		// or substr can change to "\t\t\t"
-		index := strings.Index(info, "                             ")
-		info2 := info[:index]
-
-		movieType := info[index:]
-		movieType2 := strings.TrimSpace(movieType)
-
-		star := selection.Find("div.bd > div.star > span.rating_num").Text()
-		quote := selection.Find("div.bd > p.quote > span").Text()
-
-		movies := Movie{
-			Name:  title,
-			Info:  info2,
-			Rate:  star,
-			Quote: quote,
-			Type:  movieType2,
-		}
-		doubanMovie = append(doubanMovie, movies)
-
-	})*/
 	doc.Find("div.item ").Each(func(i int, selection *goquery.Selection) {
-		movieId := selection.Find("div.pic > em").Text()
+		movieId, _ := strconv.ParseInt(selection.Find("div.pic > em").Text(), 10, 64)
 		imageLink, _ := selection.Find("div.pic > a > img").Attr("src")
 		imageLink = strings.ReplaceAll(imageLink, "img9", "img2")
 		imageLink = strings.ReplaceAll(imageLink, "img3", "img2")
@@ -95,9 +68,9 @@ func GetMovie(start int) []Movie {
 
 		star := selection.Find("div.info > div.bd > div.star > span.rating_num").Text()
 		quote := selection.Find("div.info > div.bd > p.quote > span").Text()
-
-		movies := Movie{
-			Id:    movieId,
+		// todo 1
+		movies := &Movie{
+			Id:    int(movieId),
 			Image: imageLink,
 			Name:  title,
 			Info:  info2,
@@ -113,7 +86,7 @@ func GetMovie(start int) []Movie {
 
 var ids []int64
 
-func WriteMdToFile(movie []Movie) error {
+func WriteMdToFile(movie []*Movie) error {
 	// change path here
 	file, err := os.OpenFile("README.md", os.O_CREATE|os.O_RDWR|os.O_TRUNC, 0666)
 	//file, err := os.OpenFile("README.md", os.O_RDWR|os.O_TRUNC, 0666)
@@ -140,7 +113,7 @@ func WriteMdToFile(movie []Movie) error {
 	return nil
 }
 
-func WriteJsonToFile(movie []Movie) {
+func WriteJsonToFile(movie []*Movie) {
 	bytes, err := json.MarshalIndent(movie, "\t", " ")
 	if err != nil {
 		log.Fatal(err)
