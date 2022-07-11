@@ -1,4 +1,4 @@
-*Last update Time: 2022-07-10 21:49:30*
+*Last update Time: 2022-07-11 23:01:52*
 
 **If you first use this , please delete req.Header.Add("cookie","....") in fetch.go** 
 
@@ -421,21 +421,21 @@
 	 },
 	 {
 	  "id": 47,
-	  "name": "闻香识女人 Scent of a Woman",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2550757929.jpg",
-	  "rate": "9.1",
-	  "quote": "史上最美的探戈。",
-	  "info": "导演: 马丁·布莱斯 Martin Brest\t\t\t主演: 阿尔·帕西诺 Al Pacino / 克里斯...",
-	  "type": "1992\t/\t美国\t/\t剧情"
-	 },
-	 {
-	  "id": 48,
 	  "name": "让子弹飞",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1512562287.jpg",
 	  "rate": "8.9",
 	  "quote": "你给我翻译翻译，神马叫做TMD的惊喜。",
 	  "info": "导演: 姜文 Wen Jiang\t\t\t主演: 姜文 Wen Jiang / 葛优 You Ge / 周润发 Yun-F...",
 	  "type": "2010\t/\t中国大陆 中国香港\t/\t剧情 喜剧 动作 西部"
+	 },
+	 {
+	  "id": 48,
+	  "name": "闻香识女人 Scent of a Woman",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2550757929.jpg",
+	  "rate": "9.1",
+	  "quote": "史上最美的探戈。",
+	  "info": "导演: 马丁·布莱斯 Martin Brest\t\t\t主演: 阿尔·帕西诺 Al Pacino / 克里斯...",
+	  "type": "1992\t/\t美国\t/\t剧情"
 	 },
 	 {
 	  "id": 49,
@@ -457,21 +457,21 @@
 	 },
 	 {
 	  "id": 51,
-	  "name": "罗马假日 Roman Holiday",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2189265085.jpg",
-	  "rate": "9.1",
-	  "quote": "爱情哪怕只有一天。",
-	  "info": "导演: 威廉·惠勒 William Wyler\t\t\t主演: 奥黛丽·赫本 Audrey Hepburn / 格...",
-	  "type": "1953\t/\t美国\t/\t喜剧 剧情 爱情"
-	 },
-	 {
-	  "id": 52,
 	  "name": "海蒂和爷爷 Heidi",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2554525534.jpg",
 	  "rate": "9.3",
 	  "quote": "如果生活中有什么使你感到快乐，那就去做吧！不要管别人说什么。",
 	  "info": "导演: 阿兰·葛斯彭纳 Alain Gsponer\t\t\t主演: 阿努克·斯特芬 Anuk Steffen /...",
 	  "type": "2015\t/\t德国 瑞士\t/\t剧情 冒险 家庭"
+	 },
+	 {
+	  "id": 52,
+	  "name": "罗马假日 Roman Holiday",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2189265085.jpg",
+	  "rate": "9.1",
+	  "quote": "爱情哪怕只有一天。",
+	  "info": "导演: 威廉·惠勒 William Wyler\t\t\t主演: 奥黛丽·赫本 Audrey Hepburn / 格...",
+	  "type": "1953\t/\t美国\t/\t喜剧 剧情 爱情"
 	 },
 	 {
 	  "id": 53,
@@ -637,21 +637,21 @@
 	 },
 	 {
 	  "id": 71,
-	  "name": "拯救大兵瑞恩 Saving Private Ryan",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1014542496.jpg",
-	  "rate": "9.1",
-	  "quote": "美利坚精神输出大片No1.",
-	  "info": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg\t\t\t主演: 汤姆·汉克斯 Tom Hanks...",
-	  "type": "1998\t/\t美国\t/\t剧情 战争"
-	 },
-	 {
-	  "id": 72,
 	  "name": "音乐之声 The Sound of Music",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p453788577.jpg",
 	  "rate": "9.1",
 	  "quote": "用音乐化解仇恨，让歌声串起美好。",
 	  "info": "导演: 罗伯特·怀斯 Robert Wise\t\t\t主演: 朱莉·安德鲁斯 Julie Andrews / 克...",
 	  "type": "1965\t/\t美国\t/\t剧情 传记 爱情 歌舞"
+	 },
+	 {
+	  "id": 72,
+	  "name": "拯救大兵瑞恩 Saving Private Ryan",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1014542496.jpg",
+	  "rate": "9.1",
+	  "quote": "美利坚精神输出大片No1.",
+	  "info": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg\t\t\t主演: 汤姆·汉克斯 Tom Hanks...",
+	  "type": "1998\t/\t美国\t/\t剧情 战争"
 	 },
 	 {
 	  "id": 73,
@@ -817,21 +817,21 @@
 	 },
 	 {
 	  "id": 91,
-	  "name": "杀人回忆 살인의 추억",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1633113220.jpg",
-	  "rate": "8.9",
-	  "quote": "关于连环杀人悬案的集体回忆。",
-	  "info": "导演: 奉俊昊 Joon-ho Bong\t\t\t主演: 宋康昊 Kang-ho Song / 金相庆 Sang-kyun...",
-	  "type": "2003\t/\t韩国\t/\t剧情 动作 犯罪 悬疑 惊悚"
-	 },
-	 {
-	  "id": 92,
 	  "name": "功夫",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2219011938.jpg",
 	  "rate": "8.7",
 	  "quote": "警恶惩奸，维护世界和平这个任务就交给你了，好吗？",
 	  "info": "导演: 周星驰 Stephen Chow\t\t\t主演: 周星驰 Stephen Chow / 元秋 Qiu Yuen / ...",
 	  "type": "2004\t/\t中国大陆 中国香港\t/\t动作 喜剧 犯罪 奇幻"
+	 },
+	 {
+	  "id": 92,
+	  "name": "杀人回忆 살인의 추억",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1633113220.jpg",
+	  "rate": "8.9",
+	  "quote": "关于连环杀人悬案的集体回忆。",
+	  "info": "导演: 奉俊昊 Joon-ho Bong\t\t\t主演: 宋康昊 Kang-ho Song / 金相庆 Sang-kyun...",
+	  "type": "2003\t/\t韩国\t/\t剧情 动作 犯罪 悬疑 惊悚"
 	 },
 	 {
 	  "id": 93,
@@ -961,21 +961,21 @@
 	 },
 	 {
 	  "id": 107,
-	  "name": "第六感 The Sixth Sense",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2220184425.jpg",
-	  "rate": "8.9",
-	  "quote": "深入内心的恐怖，出人意料的结局。",
-	  "info": "导演: M·奈特·沙马兰 M. Night Shyamalan\t\t\t主演: 布鲁斯·威利斯 Bruce Wi...",
-	  "type": "1999\t/\t美国\t/\t剧情 悬疑 惊悚"
-	 },
-	 {
-	  "id": 108,
 	  "name": "哈利·波特与密室 Harry Potter and the Chamber of Secrets",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1082651990.jpg",
 	  "rate": "8.8",
 	  "quote": "魔法的密室之门已打开...",
 	  "info": "导演: Chris Columbus\t\t\t主演: 丹尼尔·雷德克里夫 Daniel Radcliffe / 艾玛...",
 	  "type": "2002\t/\t英国 美国\t/\t奇幻 冒险"
+	 },
+	 {
+	  "id": 108,
+	  "name": "第六感 The Sixth Sense",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2220184425.jpg",
+	  "rate": "8.9",
+	  "quote": "深入内心的恐怖，出人意料的结局。",
+	  "info": "导演: M·奈特·沙马兰 M. Night Shyamalan\t\t\t主演: 布鲁斯·威利斯 Bruce Wi...",
+	  "type": "1999\t/\t美国\t/\t剧情 悬疑 惊悚"
 	 },
 	 {
 	  "id": 109,
@@ -1033,21 +1033,21 @@
 	 },
 	 {
 	  "id": 115,
-	  "name": "阳光灿烂的日子",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2564685215.jpg",
-	  "rate": "8.8",
-	  "quote": "一场华丽的意淫。",
-	  "info": "导演: 姜文 Wen Jiang\t\t\t主演: 夏雨 Yu Xia / 宁静 Jing Ning / 陶虹 Hong Tao",
-	  "type": "1994\t/\t中国大陆 中国香港\t/\t剧情 爱情"
-	 },
-	 {
-	  "id": 116,
 	  "name": "菊次郎的夏天 菊次郎の夏",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2620392435.jpg",
 	  "rate": "8.9",
 	  "quote": "从没见过那么流氓的温柔，从没见过那么温柔的流氓。",
 	  "info": "导演: 北野武 Takeshi Kitano\t\t\t主演: 北野武 Takeshi Kitano / 关口雄介 Yus...",
 	  "type": "1999\t/\t日本\t/\t剧情 喜剧"
+	 },
+	 {
+	  "id": 116,
+	  "name": "阳光灿烂的日子",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2564685215.jpg",
+	  "rate": "8.8",
+	  "quote": "一场华丽的意淫。",
+	  "info": "导演: 姜文 Wen Jiang\t\t\t主演: 夏雨 Yu Xia / 宁静 Jing Ning / 陶虹 Hong Tao",
+	  "type": "1994\t/\t中国大陆 中国香港\t/\t剧情 爱情"
 	 },
 	 {
 	  "id": 117,
@@ -1105,21 +1105,21 @@
 	 },
 	 {
 	  "id": 123,
-	  "name": "小森林 冬春篇 リトル・フォレスト 冬・春",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2215147728.jpg",
-	  "rate": "9.0",
-	  "quote": "尊敬他人，尊敬你生活的这片土地，明白孤独是人生的常态。",
-	  "info": "导演: 森淳一 Junichi Mori\t\t\t主演: 桥本爱 Ai Hashimoto / 三浦贵大 Takahir...",
-	  "type": "2015\t/\t日本\t/\t剧情"
-	 },
-	 {
-	  "id": 124,
 	  "name": "甜蜜蜜",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2223011274.jpg",
 	  "rate": "8.9",
 	  "quote": "相逢只要一瞬间，等待却像是一辈子。",
 	  "info": "导演: 陈可辛 Peter Chan\t\t\t主演: 黎明 Leon Lai / 张曼玉 Maggie Cheung / ...",
 	  "type": "1996\t/\t中国香港\t/\t剧情 爱情"
+	 },
+	 {
+	  "id": 124,
+	  "name": "小森林 冬春篇 リトル・フォレスト 冬・春",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2215147728.jpg",
+	  "rate": "9.0",
+	  "quote": "尊敬他人，尊敬你生活的这片土地，明白孤独是人生的常态。",
+	  "info": "导演: 森淳一 Junichi Mori\t\t\t主演: 桥本爱 Ai Hashimoto / 三浦贵大 Takahir...",
+	  "type": "2015\t/\t日本\t/\t剧情"
 	 },
 	 {
 	  "id": 125,
@@ -1221,21 +1221,21 @@
 	 },
 	 {
 	  "id": 136,
-	  "name": "大鱼 Big Fish",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p692813374.jpg",
-	  "rate": "8.8",
-	  "quote": "抱着梦想而活着的人是幸福的，怀抱梦想而死去的人是不朽的。",
-	  "info": "导演: 蒂姆·波顿 Tim Burton\t\t\t主演: 伊万·麦克格雷格 Ewan McGregor / 阿...",
-	  "type": "2003\t/\t美国\t/\t剧情 家庭 奇幻 冒险"
-	 },
-	 {
-	  "id": 137,
 	  "name": "玩具总动员3 Toy Story 3",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1283675359.jpg",
 	  "rate": "8.9",
 	  "quote": "跨度十五年的欢乐与泪水。",
 	  "info": "导演: 李·昂克里奇 Lee Unkrich\t\t\t主演: 汤姆·汉克斯 Tom Hanks / 蒂姆·艾...",
 	  "type": "2010\t/\t美国\t/\t喜剧 动画 奇幻 冒险"
+	 },
+	 {
+	  "id": 137,
+	  "name": "大鱼 Big Fish",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p692813374.jpg",
+	  "rate": "8.8",
+	  "quote": "抱着梦想而活着的人是幸福的，怀抱梦想而死去的人是不朽的。",
+	  "info": "导演: 蒂姆·波顿 Tim Burton\t\t\t主演: 伊万·麦克格雷格 Ewan McGregor / 阿...",
+	  "type": "2003\t/\t美国\t/\t剧情 家庭 奇幻 冒险"
 	 },
 	 {
 	  "id": 138,
@@ -1266,21 +1266,21 @@
 	 },
 	 {
 	  "id": 141,
-	  "name": "釜山行 부산행",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2360940399.jpg",
-	  "rate": "8.6",
-	  "quote": "揭露人性的丧尸题材力作。",
-	  "info": "导演: 延尚昊 Sang-ho Yeon\t\t\t主演: 孔侑 Yoo Gong / 郑有美 Yu-mi Jung / 马...",
-	  "type": "2016\t/\t韩国\t/\t动作 惊悚 灾难"
-	 },
-	 {
-	  "id": 142,
 	  "name": "未麻的部屋 Perfect Blue",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1351050722.jpg",
 	  "rate": "9.0",
 	  "quote": "好的剧本是，就算你猜到了结局也猜不到全部。",
 	  "info": "导演: 今敏 Satoshi Kon\t\t\t主演: 岩男润子 Junko Iwao / 松本梨香 Rica Matsu...",
 	  "type": "1997\t/\t日本\t/\t动画 奇幻 惊悚"
+	 },
+	 {
+	  "id": 142,
+	  "name": "釜山行 부산행",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2360940399.jpg",
+	  "rate": "8.6",
+	  "quote": "揭露人性的丧尸题材力作。",
+	  "info": "导演: 延尚昊 Sang-ho Yeon\t\t\t主演: 孔侑 Yoo Gong / 郑有美 Yu-mi Jung / 马...",
+	  "type": "2016\t/\t韩国\t/\t动作 惊悚 灾难"
 	 },
 	 {
 	  "id": 143,
@@ -1311,21 +1311,21 @@
 	 },
 	 {
 	  "id": 146,
-	  "name": "恐怖直播 더 테러 라이브",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2054744538.jpg",
-	  "rate": "8.7",
-	  "quote": "恐怖分子的“秋菊打官司”。",
-	  "info": "导演: 金秉祐 Byeong-woo Kim\t\t\t主演: 河正宇 Jung-woo Ha / 李璟荣 Kyeong-y...",
-	  "type": "2013\t/\t韩国\t/\t剧情 犯罪 悬疑"
-	 },
-	 {
-	  "id": 147,
 	  "name": "哪吒闹海",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2532803206.jpg",
 	  "rate": "9.1",
 	  "quote": "想你时你在闹海。",
 	  "info": "导演: 王树忱 Shuchen Wang / 严定宪 Dingxian Yan\t\t\t主演: 梁正晖 Zhenghui ...",
 	  "type": "1979\t/\t中国大陆\t/\t冒险 动画 奇幻"
+	 },
+	 {
+	  "id": 147,
+	  "name": "恐怖直播 더 테러 라이브",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2054744538.jpg",
+	  "rate": "8.7",
+	  "quote": "恐怖分子的“秋菊打官司”。",
+	  "info": "导演: 金秉祐 Byeong-woo Kim\t\t\t主演: 河正宇 Jung-woo Ha / 李璟荣 Kyeong-y...",
+	  "type": "2013\t/\t韩国\t/\t剧情 犯罪 悬疑"
 	 },
 	 {
 	  "id": 148,
@@ -1687,6 +1687,14 @@
 	 },
 	 {
 	  "id": 188,
+	  "name": "茶馆",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2528965424.jpg",
+	  "rate": "9.5",
+	  "info": "导演: 谢添 Tian Xie\t\t\t主演: 于是之 Shizhi Yu / 郑榕 Rong Zhen / 蓝天野 T...",
+	  "type": "1982(中国大陆)\t/\t中国大陆\t/\t剧情 历史"
+	 },
+	 {
+	  "id": 189,
 	  "name": "冰川时代 Ice Age",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1910895719.jpg",
 	  "rate": "8.6",
@@ -1695,21 +1703,13 @@
 	  "type": "2002\t/\t美国\t/\t喜剧 动画 冒险"
 	 },
 	 {
-	  "id": 189,
+	  "id": 190,
 	  "name": "雨中曲 Singin' in the Rain",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1612355875.jpg",
 	  "rate": "9.1",
 	  "quote": "骨灰级歌舞片。",
 	  "info": "导演: 斯坦利·多南 Stanley Donen / 吉恩·凯利 Gene Kelly\t\t\t主演: 吉恩·...",
 	  "type": "1952\t/\t美国\t/\t喜剧 歌舞 爱情"
-	 },
-	 {
-	  "id": 190,
-	  "name": "茶馆",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2528965424.jpg",
-	  "rate": "9.5",
-	  "info": "导演: 谢添 Tian Xie\t\t\t主演: 于是之 Shizhi Yu / 郑榕 Rong Zhen / 蓝天野 T...",
-	  "type": "1982(中国大陆)\t/\t中国大陆\t/\t剧情 历史"
 	 },
 	 {
 	  "id": 191,
@@ -1794,6 +1794,15 @@
 	 },
 	 {
 	  "id": 200,
+	  "name": "牯岭街少年杀人事件 牯嶺街少年殺人事件",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p848381236.jpg",
+	  "rate": "8.9",
+	  "quote": "弱者送给弱者的一刀。",
+	  "info": "导演: 杨德昌 Edward Yang\t\t\t主演: 张震 Chen Chang / 杨静怡 Lisa Yang / 张...",
+	  "type": "1991\t/\t中国台湾\t/\t剧情 犯罪"
+	 },
+	 {
+	  "id": 201,
 	  "name": "可可西里",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2363208684.jpg",
 	  "rate": "8.9",
@@ -1802,22 +1811,13 @@
 	  "type": "2004\t/\t中国大陆 中国香港\t/\t剧情 犯罪"
 	 },
 	 {
-	  "id": 201,
+	  "id": 202,
 	  "name": "大佛普拉斯",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2505928032.jpg",
 	  "rate": "8.7",
 	  "quote": "人们可以登上月球，却永远无法探索人们内心的宇宙。",
 	  "info": "导演: 黄信尧 Hsin-yao Huang\t\t\t主演: 庄益增 Yizeng Zhuang / 陈竹昇 Chu-sh...",
 	  "type": "2017\t/\t中国台湾\t/\t剧情 喜剧"
-	 },
-	 {
-	  "id": 202,
-	  "name": "牯岭街少年杀人事件 牯嶺街少年殺人事件",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p848381236.jpg",
-	  "rate": "8.9",
-	  "quote": "弱者送给弱者的一刀。",
-	  "info": "导演: 杨德昌 Edward Yang\t\t\t主演: 张震 Chen Chang / 杨静怡 Lisa Yang / 张...",
-	  "type": "1991\t/\t中国台湾\t/\t剧情 犯罪"
 	 },
 	 {
 	  "id": 203,
@@ -1864,20 +1864,20 @@
 	 },
 	 {
 	  "id": 208,
+	  "name": "小丑 Joker",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2567198874.jpg",
+	  "rate": "8.7",
+	  "info": "导演: 托德·菲利普斯 Todd Phillips\t\t\t主演: 杰昆·菲尼克斯 Joaquin Phoeni...",
+	  "type": "2019\t/\t美国 加拿大\t/\t剧情 犯罪 惊悚"
+	 },
+	 {
+	  "id": 209,
 	  "name": "人工智能 Artificial Intelligence: AI",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p792257137.jpg",
 	  "rate": "8.7",
 	  "quote": "对爱的执着，可以超越一切。",
 	  "info": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg\t\t\t主演: 海利·乔·奥斯蒙 Haley...",
 	  "type": "2001\t/\t美国 英国\t/\t剧情 科幻"
-	 },
-	 {
-	  "id": 209,
-	  "name": "小丑 Joker",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2567198874.jpg",
-	  "rate": "8.7",
-	  "info": "导演: 托德·菲利普斯 Todd Phillips\t\t\t主演: 杰昆·菲尼克斯 Joaquin Phoeni...",
-	  "type": "2019\t/\t美国 加拿大\t/\t剧情 犯罪 惊悚"
 	 },
 	 {
 	  "id": 210,
@@ -1996,20 +1996,20 @@
 	 },
 	 {
 	  "id": 223,
+	  "name": "心灵奇旅 Soul",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626308994.jpg",
+	  "rate": "8.7",
+	  "info": "导演: 彼特·道格特 Pete Docter / 凯普·鲍尔斯 Kemp Powers\t\t\t主演: 杰米·...",
+	  "type": "2020\t/\t美国\t/\t动画 奇幻 音乐"
+	 },
+	 {
+	  "id": 224,
 	  "name": "血钻 Blood Diamond",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1244017073.jpg",
 	  "rate": "8.7",
 	  "quote": "每个美丽事物背后都是滴血的现实。",
 	  "info": "导演: 爱德华·兹威克 Edward Zwick\t\t\t主演: 莱昂纳多·迪卡普里奥 Leonardo ...",
 	  "type": "2006\t/\t美国 德国 英国\t/\t剧情 惊悚 冒险"
-	 },
-	 {
-	  "id": 224,
-	  "name": "心灵奇旅 Soul",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626308994.jpg",
-	  "rate": "8.7",
-	  "info": "导演: 彼特·道格特 Pete Docter / 凯普·鲍尔斯 Kemp Powers\t\t\t主演: 杰米·...",
-	  "type": "2020\t/\t美国\t/\t动画 奇幻 音乐"
 	 },
 	 {
 	  "id": 225,
@@ -2101,15 +2101,6 @@
 	 },
 	 {
 	  "id": 235,
-	  "name": "阿飞正传 阿飛正傳",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2525770523.jpg",
-	  "rate": "8.5",
-	  "quote": "王家卫是一种风格，张国荣是一个代表。",
-	  "info": "导演: 王家卫 Kar Wai Wong\t\t\t主演: 张国荣 Leslie Cheung / 张曼玉 Maggie C...",
-	  "type": "1990\t/\t中国香港\t/\t犯罪 剧情 爱情"
-	 },
-	 {
-	  "id": 236,
 	  "name": "末路狂花 Thelma \u0026 Louise",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1910924635.jpg",
 	  "rate": "8.9",
@@ -2118,21 +2109,30 @@
 	  "type": "1991\t/\t美国 英国 法国\t/\t犯罪 剧情 惊悚"
 	 },
 	 {
+	  "id": 236,
+	  "name": "阿飞正传 阿飛正傳",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2525770523.jpg",
+	  "rate": "8.5",
+	  "quote": "王家卫是一种风格，张国荣是一个代表。",
+	  "info": "导演: 王家卫 Kar Wai Wong\t\t\t主演: 张国荣 Leslie Cheung / 张曼玉 Maggie C...",
+	  "type": "1990\t/\t中国香港\t/\t犯罪 剧情 爱情"
+	 },
+	 {
 	  "id": 237,
+	  "name": "火星救援 The Martian",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2280097442.jpg",
+	  "rate": "8.5",
+	  "info": "导演: 雷德利·斯科特 Ridley Scott\t\t\t主演: 马特·达蒙 Matt Damon / 杰西卡...",
+	  "type": "2015\t/\t英国 美国 匈牙利 约旦\t/\t剧情 科幻 冒险"
+	 },
+	 {
+	  "id": 238,
 	  "name": "海洋 Océans",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2559581324.jpg",
 	  "rate": "9.1",
 	  "quote": "大海啊，不全是水。",
 	  "info": "导演: 雅克·贝汉 Jacques Perrin / 雅克·克鲁奥德 Jacques Cluzaud\t\t\t主演:...",
 	  "type": "2009\t/\t法国 瑞士 西班牙 美国 阿联酋 摩纳哥\t/\t纪录片"
-	 },
-	 {
-	  "id": 238,
-	  "name": "火星救援 The Martian",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2280097442.jpg",
-	  "rate": "8.5",
-	  "info": "导演: 雷德利·斯科特 Ridley Scott\t\t\t主演: 马特·达蒙 Matt Damon / 杰西卡...",
-	  "type": "2015\t/\t英国 美国 匈牙利 约旦\t/\t剧情 科幻 冒险"
 	 },
 	 {
 	  "id": 239,
@@ -2154,21 +2154,21 @@
 	 },
 	 {
 	  "id": 241,
-	  "name": "穿越时空的少女 時をかける少女",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2079334286.jpg",
-	  "rate": "8.6",
-	  "quote": "爱上未来的你。 ",
-	  "info": "导演: 细田守 Mamoru Hosoda\t\t\t主演: 仲里依纱 Riisa Naka / 石田卓也 Takuya...",
-	  "type": "2006\t/\t日本\t/\t剧情 爱情 科幻 动画"
-	 },
-	 {
-	  "id": 242,
 	  "name": "朗读者 The Reader",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p1140984198.jpg",
 	  "rate": "8.6",
 	  "quote": "当爱情跨越年龄的界限，它似乎能变得更久远一点，成为一种责任，一种水到渠成的相濡以沫。 ",
 	  "info": "导演: 史蒂芬·戴德利 Stephen Daldry\t\t\t主演: 凯特·温丝莱特 Kate Winslet ...",
 	  "type": "2008\t/\t美国 德国\t/\t剧情 爱情"
+	 },
+	 {
+	  "id": 242,
+	  "name": "穿越时空的少女 時をかける少女",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2079334286.jpg",
+	  "rate": "8.6",
+	  "quote": "爱上未来的你。 ",
+	  "info": "导演: 细田守 Mamoru Hosoda\t\t\t主演: 仲里依纱 Riisa Naka / 石田卓也 Takuya...",
+	  "type": "2006\t/\t日本\t/\t剧情 爱情 科幻 动画"
 	 },
 	 {
 	  "id": 243,
@@ -2181,21 +2181,21 @@
 	 },
 	 {
 	  "id": 244,
-	  "name": "地球上的星星 Taare Zameen Par",
-	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2197897857.jpg",
-	  "rate": "8.9",
-	  "quote": "天使保护事件始末。",
-	  "info": "导演: 阿米尔·汗 Aamir Khan\t\t\t主演: 达席尔·萨法瑞 Darsheel Safary / 阿...",
-	  "type": "2007\t/\t印度\t/\t剧情 儿童 家庭"
-	 },
-	 {
-	  "id": 245,
 	  "name": "千年女优 千年女優",
 	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2215102596.jpg",
 	  "rate": "8.8",
 	  "quote": "爱情是一场没有尽头的虚幻追逐。",
 	  "info": "导演: 今敏 Satoshi Kon\t\t\t主演: 庄司美代子 Miyoko Shôji / 小山茉美 Mam...",
 	  "type": "2001\t/\t日本\t/\t动画 剧情 爱情"
+	 },
+	 {
+	  "id": 245,
+	  "name": "地球上的星星 Taare Zameen Par",
+	  "image": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2197897857.jpg",
+	  "rate": "8.9",
+	  "quote": "天使保护事件始末。",
+	  "info": "导演: 阿米尔·汗 Aamir Khan\t\t\t主演: 达席尔·萨法瑞 Darsheel Safary / 阿...",
+	  "type": "2007\t/\t印度\t/\t剧情 儿童 家庭"
 	 },
 	 {
 	  "id": 246,
@@ -2242,4 +2242,5 @@
 	  "info": "导演: 丹尼斯·甘塞尔 Dennis Gansel\t\t\t主演: 尤尔根·沃格尔 Jürgen Vogel ...",
 	  "type": "2008\t/\t德国\t/\t剧情 惊悚"
 	 }
-	]```
+	]
+```

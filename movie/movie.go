@@ -36,8 +36,8 @@ const (
 )
 
 func GetMovie(start int) []*Movie {
+	// 感觉这里没必要用go GetMovieBodyFromStart()吧？main goroutine还是要等其他goroutine返回数据才能工作，返回数据前它是阻塞的
 	body := GetMovieBodyFromStart(start)
-
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(body))
 	if err != nil {
 		log.Fatal(err)
@@ -84,7 +84,7 @@ func GetMovie(start int) []*Movie {
 	return doubanMovie
 }
 
-var ids []int64
+//var ids []int64
 
 func WriteMdToFile(movie []*Movie) error {
 	// change path here
@@ -101,7 +101,7 @@ func WriteMdToFile(movie []*Movie) error {
 		return err
 	}
 	for _, movie := range movie {
-		_, err := file.WriteString(fmt.Sprintf("| %s | ![](%s) | %s | %s | %s | %s | %s |\n", movie.Id, movie.Image, movie.Name, movie.Rate, movie.Type, movie.Info, movie.Quote))
+		_, err := file.WriteString(fmt.Sprintf("| %d | ![](%s) | %s | %s | %s | %s | %s |\n", movie.Id, movie.Image, movie.Name, movie.Rate, movie.Type, movie.Info, movie.Quote))
 		if err != nil {
 			return err
 		}
@@ -138,7 +138,7 @@ func WriteJsonToFile(movie []*Movie) {
 		log.Fatal(err)
 	}
 
-	_, err = file.WriteString(fmt.Sprintf("```json\n%v```", string(bytes)))
+	_, err = file.WriteString(fmt.Sprintf("```json\n%v\n```", string(bytes)))
 	if err != nil {
 		log.Fatal(err)
 	}
