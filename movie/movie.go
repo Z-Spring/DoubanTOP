@@ -42,7 +42,8 @@ func GetMovie(start int) []*Movie {
 	if err != nil {
 		log.Fatal(err)
 	}
-	var doubanMovie []*Movie
+	// 给slice一个初始的容量，避免过多的内存分配
+	doubanMovie := make([]*Movie, 0, 25)
 
 	doc.Find("div.item ").Each(func(i int, selection *goquery.Selection) {
 		movieId, _ := strconv.ParseInt(selection.Find("div.pic > em").Text(), 10, 64)

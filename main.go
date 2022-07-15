@@ -17,7 +17,7 @@ func main() {
 	movies := GetAllMovies()
 	movie.WriteJsonToFile(movies)
 	end := time.Since(start)
-	fmt.Println(end)
+	fmt.Printf("movies have added to your file! run time: %v", end)
 }
 
 func GetSelectedMoviePage(start int) []*movie.Movie {
@@ -25,7 +25,7 @@ func GetSelectedMoviePage(start int) []*movie.Movie {
 }
 
 func GetAllMovies() []*movie.Movie {
-	var DoubanMovie []*movie.Movie
+	DoubanMovie := make([]*movie.Movie, 0, 250)
 
 	pageStart := []int{0, 25, 50, 75, 100, 125, 150, 175, 200, 225}
 	result := make(chan []*movie.Movie)
