@@ -1,11 +1,12 @@
 package main
 
 import (
-	"douban-movie/movie"
 	"fmt"
 	"log"
 	"sort"
 	"time"
+
+	"douban-movie/movie"
 )
 
 func init() {
@@ -15,11 +16,13 @@ func init() {
 func main() {
 	start := time.Now()
 	movies := GetAllMovies()
-	movie.WriteJsonToFile(movies)
+	// movie.WriteJsonToFile(movies)
+	movie.WriteMdToFile(movies)
 	end := time.Since(start)
 	fmt.Printf("movies have added to your file! run time: %v", end)
 }
 
+// GetSelectedMoviePage you can get specify page info with this func
 func GetSelectedMoviePage(start int) []*movie.Movie {
 	return movie.GetMovie(start)
 }
