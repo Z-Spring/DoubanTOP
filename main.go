@@ -16,8 +16,8 @@ func init() {
 func main() {
 	start := time.Now()
 	movies := GetAllMovies()
-	// movie.WriteJsonToFile(movies)
-	movie.WriteMdToFile(movies)
+	movie.WriteJsonToFile(movies)
+	// movie.WriteMdToFile(movies)
 	end := time.Since(start)
 	fmt.Printf("movies have added to your file! run time: %v", end)
 }
